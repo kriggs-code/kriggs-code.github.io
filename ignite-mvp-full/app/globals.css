@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: #050816;
+  color: #f8f5f0;
+}
+
+html { scroll-behavior: smooth; }
+body { background: #050816; color: #f8f5f0; }
+* { box-sizing: border-box; }
+::selection { background: #f4d35e; color: #081226; }
+
+.reveal { animation: reveal 780ms ease both; }
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.noise {
+  background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
